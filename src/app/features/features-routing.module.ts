@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FeaturesComponent } from './features.component';
+import { TableComponent } from './table/table.component';
 
-const routes: Routes = [{ path: '', component: FeaturesComponent }];
+const routes: Routes = [
+  { path: '', component: TableComponent }
+  // Add additional routes for lazy-loaded components if necessary
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
