@@ -5,7 +5,8 @@ import { ModalComponent } from './features/modal/modal.component';
 const routes: Routes = [
   { path: '', redirectTo: 'features', pathMatch: 'full' },
   { path: 'features', loadChildren: () => import('./features/features.module').then(m => m.FeaturesModule) },
-  { path: 'modal', redirectTo: 'features/modal', pathMatch: 'full'}
+  { path: 'modal', redirectTo: 'features/modal', pathMatch: 'full'},
+  { path: 'modal', component: ModalComponent }
 ];
 
 @NgModule({

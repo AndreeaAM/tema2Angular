@@ -2,6 +2,7 @@ import { Component , OnInit} from '@angular/core';
 import { Item } from '../item';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 @Component({
   selector: 'app-table',
@@ -107,13 +108,13 @@ export class TableComponent implements OnInit {
     this.currentItem = null;
     this.isVisible = true;
     console.log('openModal');
-    this.router.navigateByUrl('/features/modal')
+    this.router.navigateByUrl('/modal')
   }
 
   editRow(item: Item): void {
     this.currentItem = item;
     this.isVisible = true;
-    this.router.navigateByUrl('/features/modal')
+    this.router.navigateByUrl('/modal')
   }
 
   handleSave(item: Item): void {
