@@ -27,8 +27,13 @@ import { Router, RouterModule } from '@angular/router';
       { path: '', component: FeaturesComponent },
       { path: 'table', component: TableComponent },
       { path: 'modal', component: ModalComponent },
-      
+
     ])
+  ],
+  exports: [
+    FeaturesComponent,
+    TableComponent,
+    ModalComponent
   ]
 })
 export class FeaturesModule { }

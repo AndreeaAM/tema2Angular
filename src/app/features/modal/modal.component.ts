@@ -18,6 +18,7 @@ export class ModalComponent {
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
       name: ['', [Validators.required]],
+      age: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       phone: ['', [Validators.required]],
       address: ['', [Validators.required]]

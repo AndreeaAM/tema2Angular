@@ -1,5 +1,7 @@
 import { Component , OnInit} from '@angular/core';
 import { Item } from '../item';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-table',
@@ -7,6 +9,7 @@ import { Item } from '../item';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
+  constructor(private router: Router) {}
   listOfData: Item[] = [];
   isVisible = false;
   currentItem: Item | null = null;
@@ -103,11 +106,14 @@ export class TableComponent implements OnInit {
   openModal(): void {
     this.currentItem = null;
     this.isVisible = true;
+    console.log('openModal');
+    this.router.navigateByUrl('/features/modal')
   }
 
   editRow(item: Item): void {
     this.currentItem = item;
     this.isVisible = true;
+    this.router.navigateByUrl('/features/modal')
   }
 
   handleSave(item: Item): void {
