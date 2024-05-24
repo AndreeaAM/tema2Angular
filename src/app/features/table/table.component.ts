@@ -17,7 +17,86 @@ export class TableComponent implements OnInit {
 
   loadData(): void {
     this.listOfData = [
-      // Load your initial data here
+      {
+        "id": 1,
+        "name": "John Doe",
+        "age": 32,
+        "email": "john.doe@example.com",
+        "phone": "1234567890",
+        "address": "1234 Main St"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "age": 28,
+        "email": "jane.smith@example.com",
+        "phone": "0987654321",
+        "address": "5678 Elm St"
+      },
+      {
+        "id": 3,
+        "name": "Michael Johnson",
+        "age": 45,
+        "email": "michael.johnson@example.com",
+        "phone": "5551234567",
+        "address": "9101 Maple Ave"
+      },
+      {
+        "id": 4,
+        "name": "Emily Brown",
+        "age": 29,
+        "email": "emily.brown@example.com",
+        "phone": "9876543210",
+        "address": "2468 Oak Blvd"
+      },
+      {
+        "id": 5,
+        "name": "David Wilson",
+        "age": 37,
+        "email": "david.wilson@example.com",
+        "phone": "1230987654",
+        "address": "1357 Pine St"
+      },
+      {
+        "id": 6,
+        "name": "Sarah Taylor",
+        "age": 31,
+        "email": "sarah.taylor@example.com",
+        "phone": "3216549870",
+        "address": "3698 Cedar Ln"
+      },
+      {
+        "id": 7,
+        "name": "Christopher Martinez",
+        "age": 40,
+        "email": "chris.martinez@example.com",
+        "phone": "7894561230",
+        "address": "7410 Birch Rd"
+      },
+      {
+        "id": 8,
+        "name": "Amanda Johnson",
+        "age": 27,
+        "email": "amanda.johnson@example.com",
+        "phone": "4567890123",
+        "address": "8523 Willow Ln"
+      },
+      {
+        "id": 9,
+        "name": "Daniel Davis",
+        "age": 34,
+        "email": "daniel.davis@example.com",
+        "phone": "6543210987",
+        "address": "9753 Spruce St"
+      },
+      {
+        "id": 10,
+        "name": "Jessica White",
+        "age": 25,
+        "email": "jessica.white@example.com",
+        "phone": "9870123456",
+        "address": "6321 Birch Ave"
+      }                                                      
     ];
   }
 

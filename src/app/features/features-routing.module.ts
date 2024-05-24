@@ -5,7 +5,6 @@ import { TableComponent } from './table/table.component';
 
 const routes: Routes = [
   { path: '', component: TableComponent }
-  // Add additional routes for lazy-loaded components if necessary
 ];
 
 @NgModule({
